@@ -218,7 +218,7 @@ store['month'] = store['Order Date'].dt.month
 #Plot the Dashboard
 fig = plt.figure(figsize=(18, 10), dpi=300)
 grid = GridSpec(2, 3, width_ratios=[1, 1, 1], height_ratios=[1, 1])
-
+sns.set_theme()
 plot_line(store, grid)
 bar_plot_v(store, grid)
 pie_plot(store, grid)
@@ -227,3 +227,5 @@ print_detail()
 #Save the Image with ID.png
 plt.savefig('22081216.png', dpi=300)
 # plt.show()
+#Git hub
+#https://github.com/losirlu1411/22081216.-infographics-Dashboard
